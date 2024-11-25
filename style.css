@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100 vh;
+    font-family: poppins;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***** HEADER *****/
+
+header {
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 30px;
+}
+
+header h1 span {
+    font-weight: 200;
+}
+
+header p {
+    color: hsl(229, 6%, 66%);
+}
+
+/***** MAIN *****/
+
+main {
+    max-width: 1440px;
+    margin-top: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 40px;
+
+}
+
+/***** CARD *****/
+
+.card {
+    padding: 10%;
+    box-shadow: 5px 15px 20px hsl(229, 6%, 66%);
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 20px;
+}
+
+.card img {
+    float: right;
+}
+
+/***** CARD COLOR *****/
+
+#teambuilder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+#supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    grid-area: 2 / 1 / 4 / 2;
+    }
+
+#calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    grid-area: 2 / 3 / 4 / 4;
+
+}
+
+#karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
